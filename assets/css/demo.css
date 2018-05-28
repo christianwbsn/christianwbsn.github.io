@@ -888,6 +888,12 @@ pre.prettyprint {
     .info.info-separator:after {
         display: none;
     }
+    .nav-tabs {
+        font-size: 15px;
+    }
+    p {
+        font-size: 13px;
+    }
 }
 
 .info li {

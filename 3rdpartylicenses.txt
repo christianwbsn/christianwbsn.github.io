@@ -104,15 +104,15 @@ MIT
 MIT
 MIT
 
+@angular/common@4.3.1
+MIT
+MIT
+
 @angular/forms@4.3.1
 MIT
 MIT
 
 @angular/platform-browser@4.3.1
-MIT
-MIT
-
-@angular/common@4.3.1
 MIT
 MIT
 
