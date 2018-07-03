@@ -118,7 +118,7 @@
 
 .footer-black,
 .footer-transparent{
-    background-color: $black-footer-bg;
+    background-color: transparent;
     color: $medium-gray;
 
     .links ul{
@@ -162,7 +162,7 @@
     }
 
     &::after{
-        @include black-filter(.5);
+        // @include black-filter(.5);
     }
 }
 .footer-gray{

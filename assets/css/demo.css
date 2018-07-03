@@ -757,6 +757,10 @@ pre.prettyprint {
     border-radius: 6px 6px 0 0;
     overflow: hidden;
     box-shadow: 0 -3px 8px rgba(0, 0, 0, 0);
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    -ms-border-radius: 6px 6px 0 0;
+    -o-border-radius: 6px 6px 0 0;
 }
 
 .presentation .section-images .card-image .image {
