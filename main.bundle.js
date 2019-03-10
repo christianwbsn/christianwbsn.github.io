@@ -1,19 +1,26 @@
 webpackJsonp(["main"],{
 
 /***/ "../../../../../src/$$_gendir lazy recursive":
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
+var map = {
+	"./article/article.module": [
+		"../../../../../src/app/article/article.module.ts"
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids)
+		return Promise.reject(new Error("Cannot find module '" + req + "'."));
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
+		return __webpack_require__(ids[0]);
 	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
+};
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = "../../../../../src/$$_gendir lazy recursive";
+module.exports = webpackAsyncContext;
 
 /***/ }),
 
@@ -159,36 +166,19 @@ var _a, _b, _c, _d, _e;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__signup_signup_component__ = __webpack_require__("../../../../../src/app/signup/signup.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__article_article_component__ = __webpack_require__("../../../../../src/app/article/article.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__profile_profile_component__ = __webpack_require__("../../../../../src/app/profile/profile.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__project_project_component__ = __webpack_require__("../../../../../src/app/project/project.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__shared_navbar_navbar_component__ = __webpack_require__("../../../../../src/app/shared/navbar/navbar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shared_footer_footer_component__ = __webpack_require__("../../../../../src/app/shared/footer/footer.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__home_home_module__ = __webpack_require__("../../../../../src/app/home/home.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_ngx_pagination__ = __webpack_require__("../../../../ngx-pagination/dist/ngx-pagination.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_angular2_moment__ = __webpack_require__("../../../../angular2-moment/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_angular2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_angular2_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_ng2_search_filter__ = __webpack_require__("../../../../ng2-search-filter/ng2-search-filter.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19_ngx_order_pipe__ = __webpack_require__("../../../../ngx-order-pipe/ngx-order-pipe.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__post_post_component__ = __webpack_require__("../../../../../src/app/post/post.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21_ngx_loading__ = __webpack_require__("../../../../ngx-loading/ngx-loading/ngx-loading.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ngx_sharebuttons__ = __webpack_require__("../../../../ngx-sharebuttons/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__profile_profile_component__ = __webpack_require__("../../../../../src/app/profile/profile.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__project_project_component__ = __webpack_require__("../../../../../src/app/project/project.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_navbar_navbar_component__ = __webpack_require__("../../../../../src/app/shared/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_footer_footer_component__ = __webpack_require__("../../../../../src/app/shared/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__home_home_module__ = __webpack_require__("../../../../../src/app/home/home.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__article_article_module__ = __webpack_require__("../../../../../src/app/article/article.module.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
-
-
-
-
-
-
 
 
 
@@ -213,13 +203,10 @@ AppModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__signup_signup_component__["a" /* SignupComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__article_article_component__["a" /* ArticleComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__profile_profile_component__["a" /* ProfileComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__shared_navbar_navbar_component__["a" /* NavbarComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__shared_footer_footer_component__["a" /* FooterComponent */],
-            __WEBPACK_IMPORTED_MODULE_20__post_post_component__["a" /* PostComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__project_project_component__["a" /* ProjectComponent */]
+            __WEBPACK_IMPORTED_MODULE_8__profile_profile_component__["a" /* ProfileComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__shared_navbar_navbar_component__["a" /* NavbarComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__shared_footer_footer_component__["a" /* FooterComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__project_project_component__["a" /* ProjectComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -227,15 +214,10 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormsModule"],
             __WEBPACK_IMPORTED_MODULE_4__angular_router__["d" /* RouterModule */],
             __WEBPACK_IMPORTED_MODULE_5__app_routing__["a" /* AppRoutingModule */],
-            __WEBPACK_IMPORTED_MODULE_14__angular_common_http__["b" /* HttpClientModule */],
-            __WEBPACK_IMPORTED_MODULE_15__home_home_module__["a" /* HomeModule */],
+            __WEBPACK_IMPORTED_MODULE_12__angular_common_http__["a" /* HttpClientModule */],
+            __WEBPACK_IMPORTED_MODULE_13__home_home_module__["a" /* HomeModule */],
+            __WEBPACK_IMPORTED_MODULE_14__article_article_module__["ArticleModule"],
             __WEBPACK_IMPORTED_MODULE_6__angular_http__["c" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_16_ngx_pagination__["a" /* NgxPaginationModule */],
-            __WEBPACK_IMPORTED_MODULE_17_angular2_moment__["MomentModule"],
-            __WEBPACK_IMPORTED_MODULE_18_ng2_search_filter__["a" /* Ng2SearchPipeModule */],
-            __WEBPACK_IMPORTED_MODULE_19_ngx_order_pipe__["a" /* OrderModule */],
-            __WEBPACK_IMPORTED_MODULE_21_ngx_loading__["a" /* LoadingModule */],
-            __WEBPACK_IMPORTED_MODULE_22_ngx_sharebuttons__["a" /* ShareButtonsModule */].forRoot(),
         ],
         providers: [],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
@@ -257,9 +239,8 @@ AppModule = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__profile_profile_component__ = __webpack_require__("../../../../../src/app/profile/profile.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__article_article_component__ = __webpack_require__("../../../../../src/app/article/article.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__post_post_component__ = __webpack_require__("../../../../../src/app/post/post.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__project_project_component__ = __webpack_require__("../../../../../src/app/project/project.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__project_project_component__ = __webpack_require__("../../../../../src/app/project/project.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__article_article_component__ = __webpack_require__("../../../../../src/app/article/article.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -274,14 +255,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
 var routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_4__home_home_component__["a" /* HomeComponent */] },
     { path: 'profile', component: __WEBPACK_IMPORTED_MODULE_5__profile_profile_component__["a" /* ProfileComponent */] },
-    { path: 'project/:name', component: __WEBPACK_IMPORTED_MODULE_8__project_project_component__["a" /* ProjectComponent */] },
-    { path: 'article', component: __WEBPACK_IMPORTED_MODULE_6__article_article_component__["a" /* ArticleComponent */] },
-    { path: 'article/:id', component: __WEBPACK_IMPORTED_MODULE_7__post_post_component__["a" /* PostComponent */] },
+    { path: 'project/:name', component: __WEBPACK_IMPORTED_MODULE_6__project_project_component__["a" /* ProjectComponent */] },
+    { path: 'article', loadChildren: './article/article.module#ArticleModule', component: __WEBPACK_IMPORTED_MODULE_7__article_article_component__["a" /* ArticleComponent */] },
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
@@ -306,7 +285,7 @@ AppRoutingModule = __decorate([
 /***/ "../../../../../src/app/article/article.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<ngx-loading [show]=\"loading\" [config]=\"{ backdropBorderRadius: '14px' }\"></ngx-loading>\n<div class=\"page-header\" data-parallax=\"true\" style=\"background-image: url('../assets/img/geekydea.png');\">\n    <div class=\"filter\"></div>\n    <div class=\"container\">\n        <div class=\"motto text-center\">\n            <div class=\"angular-logo\">\n                <img src=\"assets/img/geekystrophe_logo_1.png\" alt=\"\">\n            </div>\n            <h1 class=\"presentation-title\" style=\"font-family:'Gardenfreude'\"> Geekydea</h1>\n            <!-- <h2 class=\"presentation-subtitle text-center line-1 anim-typewriter\"> Random thoughts and ideas <del>worth</del> sharing</h2> -->\n            <h2 class=\"presentation-subtitle revealing\">Ideas</h2>\n            <h2 class=\"presentation-subtitle revealing\"> \n                <span>and random thoughts <del>worth</del> sharing</span>\n            </h2>\n            <br/>\n        </div>\n    </div>\n</div>\n<div class=\"main\">\n    <div class=\"section\">\n        <div class=\"row\">\n            <div class=\"form-group col-5\" style=\"margin:auto\">\n                <input type=\"searchbox\" class=\"form-control\" placeholder=\"Search article here..\" [(ngModel)]=\"term\">\n            </div>\n        </div>\n        <br>\n        <h4 class=\"text-center\" *ngIf=\"!isFoundArticle()\">No articles found</h4>\n        <br>\n        <div class=\"card-deck\" style=\"margin:auto\">\n            <div class=\"blog-card col-md-8 col-lg-8 col-sm-10 col-10\" *ngFor=\"let post of posts | paginate: { itemsPerPage: 9, currentPage: page } | filter:term | orderBy: order : true\">\n                <img [src]=\"post.thumbnail\" class=\"photo\">\n                <ul class=\"details\">\n                    <li class=\"author\">\n                        <a>{{ post.author }}</a>\n                    </li>\n                    <li class=\"date\">{{ post.pubDate | amParse:'YYYY-MM-DD' | amDateFormat:'LL' }} </li>\n                    <li class=\"tags\" *ngFor=\"let tag of post.categories; let i=index\">\n                        <ul *ngIf=\"i<3\">\n                            <li>\n                                <a>{{ tag }}</a>\n                            </li>\n                        </ul>\n                    </li>\n                </ul>\n                <div class=\"description\" [routerLink]=\"['/article', post.id]\">\n                    <h1>\n                        <strong>{{ post.title }}</strong>\n                    </h1>\n                    <small>{{ post.pubDate | amParse:'YYYY-MM-DD' | amDateFormat:'LL' }} - {{ post.est_reading_time }} min read</small>\n                    <p class=\"summary\">\n                        {{ post.description }}\n                    </p>\n                    <a [routerLink]=\"['/article', post.id]\">Read More</a>\n                </div>\n            </div>\n        </div>\n        <pagination-controls (pageChange)=\"page = $event\" class=\"text-center\"></pagination-controls>\n    </div>\n    <!-- <iframe src=\"http://nbviewer.jupyter.org/github/christianwbsn/world-cup-2018-predictor/blob/master/notebooks/Who%20Will%20Win%20The%20World%20Cup%202018.ipynb\">\n    </iframe> -->\n</div>"
+module.exports = "<ngx-loading [show]=\"loading\" [config]=\"{ backdropBorderRadius: '14px' }\"></ngx-loading>\n<div class=\"wrapper\">\n    <div class=\"page-header section-dark\" style=\"background-image: url('../assets/img/geekydea.png');\">\n        <div class=\"filter\"></div>\n        <div class=\"content-center\">\n            <div class=\"container\">\n                <div class=\"title-brand\">\n                    <div class=\"angular-logo\">\n                        <img src=\"assets/img/geekystrophe_logo_1.png\" alt=\"\">\n                    </div>\n                    <h1 class=\"presentation-title\" style=\"font-family:'Gardenfreude'\"> Geekidea</h1>\n                    <h2 class=\"presentation-subtitle revealing\">Ideas</h2>\n                    <h2 class=\"presentation-subtitle revealing\">\n                        <span>and random thoughts\n                            <del>worth</del> sharing</span>\n                    </h2>\n                    <br/>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"main\">\n        <div class=\"section\">\n            <input type=\"searchbox\" class=\"form-control col-5\" placeholder=\"Search article here..\" [(ngModel)]=\"term\" style=\"margin: auto\">\n            <br>\n            <h4 class=\"text-center\" *ngIf=\"!isFoundArticle()\">No articles found</h4>\n            <br>\n            <div class=\"card-deck col-10\" style=\"margin:auto\">\n                <div class=\"blog-card\" *ngFor=\"let post of posts | paginate: { itemsPerPage: 9, currentPage: page } | filter:term | orderBy: order : true\">\n                    <img [src]=\"post.thumbnail\" class=\"photo\">\n                    <ul class=\"details\">\n                        <li class=\"author\">\n                            <a>{{ post.author }}</a>\n                        </li>\n                        <li class=\"date\">{{ post.pubDate | amParse:'YYYY-MM-DD' | amDateFormat:'LL' }} </li>\n                        <li class=\"tags\" *ngFor=\"let tag of post.categories; let i=index\">\n                            <ul *ngIf=\"i<3\">\n                                <li>\n                                    <a>{{ tag }}</a>\n                                </li>\n                            </ul>\n                        </li>\n                    </ul>\n                    <div class=\"description\" [routerLink]=\"['/article', post.id]\">\n                        <h1>\n                            <strong>{{ post.title }}</strong>\n                        </h1>\n                        <small>{{ post.pubDate | amParse:'YYYY-MM-DD' | amDateFormat:'LL' }} - {{ post.est_reading_time }} min read</small>\n                        <p class=\"summary\">\n                            {{ post.description }}\n                        </p>\n                        <a [routerLink]=\"['/article', post.id]\">Read More</a>\n                    </div>\n                </div>\n            </div>\n            <pagination-controls (pageChange)=\"page = $event\" class=\"text-center\" style=\"margin: auto\"></pagination-controls>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -319,7 +298,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Ano
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700);", ""]);
 
 // module
-exports.push([module.i, "/* Google Fonts */\n/*PEN STYLES*/\n/* Global */\nhtml {\n  min-height: 100%;\n  overflow: hidden; }\n\nbody {\n  height: calc(100vh - 8em);\n  padding: 4em;\n  color: rgba(255, 255, 255, 0.75);\n  font-family: 'Anonymous Pro', monospace;\n  background-color: #191919; }\n\n.line-1 {\n  position: relative;\n  top: 90%;\n  width: 24em;\n  margin: 0 auto;\n  border-right: 2px solid rgba(255, 255, 255, 0.75);\n  font-size: 180%;\n  text-align: center;\n  white-space: nowrap;\n  overflow: hidden;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%); }\n\n/* Animation */\n.anim-typewriter {\n  -webkit-animation: typewriter 4s steps(60) 1s 1 normal both, blinkTextCursor 750ms steps(60) infinite normal;\n          animation: typewriter 4s steps(60) 1s 1 normal both, blinkTextCursor 750ms steps(60) infinite normal; }\n\n@-webkit-keyframes typewriter {\n  from {\n    width: 0; }\n  to {\n    width: 24em; } }\n\n@keyframes typewriter {\n  from {\n    width: 0; }\n  to {\n    width: 24em; } }\n\n@-webkit-keyframes blinkTextCursor {\n  from {\n    border-right-color: rgba(255, 255, 255, 0.75); }\n  to {\n    border-right-color: transparent; } }\n\n@keyframes blinkTextCursor {\n  from {\n    border-right-color: rgba(255, 255, 255, 0.75); }\n  to {\n    border-right-color: transparent; } }\n\nbody {\n  background: #f1f1f1;\n  margin: 2rem; }\n\n.blog-card {\n  transition: height 0.3s ease;\n  -webkit-transition: height 0.3s ease;\n  background: #fff;\n  border-radius: 3px;\n  box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);\n  margin: 0 auto 1.6%;\n  overflow: hidden;\n  position: relative;\n  font-size: 14px;\n  line-height: 1.45em;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n  .blog-card:hover .details {\n    left: 0; }\n  .blog-card:hover.alt .details {\n    right: 0; }\n  .blog-card.alt .details {\n    right: -100%;\n    left: inherit; }\n  .blog-card .photo {\n    height: 200px;\n    position: relative;\n    margin: auto; }\n  .blog-card .details {\n    min-height: 300px;\n    transition: all 0.3s ease;\n    -webkit-transition: all 0.3s ease;\n    background: rgba(0, 0, 0, 0.6);\n    box-sizing: border-box;\n    color: #fff;\n    font-family: \"Open Sans\";\n    list-style: none;\n    margin: 0;\n    padding: 10px 15px;\n    line-height: 1.5em;\n    /*POSITION*/\n    position: absolute;\n    top: 0;\n    left: -100%; }\n    .blog-card .details > li {\n      padding: 3px 0; }\n    .blog-card .details li:before,\n    .blog-card .details .tags ul:before {\n      font-family: FontAwesome;\n      margin-right: 10px;\n      vertical-align: middle; }\n    .blog-card .details .author:before {\n      content: \"\\F007\"; }\n    .blog-card .details .date:before {\n      content: \"\\F133\"; }\n    .blog-card .details .tags ul {\n      list-style: none;\n      margin: 0;\n      padding: 0; }\n      .blog-card .details .tags ul:before {\n        content: \"\\F02B\"; }\n    .blog-card .details .tags li {\n      display: inline-block;\n      margin-right: 3px; }\n    .blog-card .details a {\n      color: inherit;\n      border-bottom: 1px dotted; }\n      .blog-card .details a:hover {\n        color: #87C4DB; }\n  .blog-card .description {\n    padding: 10px;\n    box-sizing: border-box;\n    position: relative;\n    min-height: 300px; }\n    .blog-card .description h1 {\n      font-family: \"Roboto\";\n      line-height: 1em;\n      margin: 0 0 10px 0;\n      font-size: 20px; }\n    .blog-card .description h2 {\n      color: #9b9b9b;\n      font-family: \"Open Sans\";\n      line-height: 1.2em;\n      text-transform: uppercase;\n      font-size: 1em;\n      font-weight: 400;\n      margin: 1.2% 0; }\n    .blog-card .description p {\n      position: relative;\n      margin: 0;\n      padding-top: 20px;\n      font-size: 12px; }\n      .blog-card .description p:after {\n        content: \"\";\n        background: #87C4DB;\n        height: 6px;\n        width: 40px;\n        /*POSITION*/\n        position: absolute;\n        top: 6px;\n        left: 0; }\n    .blog-card .description a {\n      color: #87C4DB;\n      margin-bottom: 20px;\n      float: right; }\n      .blog-card .description a:after {\n        transition: all 0.3s ease;\n        -webkit-transition: all 0.3s ease;\n        content: \"\\F061\";\n        font-family: FontAwesome;\n        margin-left: -10px;\n        opacity: 0;\n        vertical-align: middle; }\n      .blog-card .description a:hover:after {\n        margin-left: 5px;\n        opacity: 1; }\n\n@media screen and (max-width: 1000px) {\n  .blog-card .description h1 {\n    font-size: 18px; }\n  .blog-card .description p {\n    font-size: 11px; }\n  .presentation-subtitle {\n    font-size: 18px; } }\n\n@media screen and (max-width: 600px) {\n  .revealing {\n    display: inline-block;\n    overflow: hidden;\n    white-space: nowrap;\n    margin-bottom: 0em; }\n  .revealing:first-of-type {\n    /* For increasing performance \n\t\t\t\t\t\t ID/Class should've been used. \n\t\t\t\t\t\t For a small demo \n\t\t\t\t\t\t it's okaish for now */\n    -webkit-animation: showup 7s infinite;\n            animation: showup 7s infinite; }\n  .revealing:last-of-type {\n    width: 0px;\n    -webkit-animation: reveal 7s infinite;\n            animation: reveal 7s infinite; }\n  .revealing:last-of-type span {\n    margin-left: -355px;\n    -webkit-animation: slidein 7s infinite;\n            animation: slidein 7s infinite; }\n  @-webkit-keyframes showup {\n    0% {\n      opacity: 0; }\n    20% {\n      opacity: 1; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0; } }\n  @keyframes showup {\n    0% {\n      opacity: 0; }\n    20% {\n      opacity: 1; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0; } }\n  @-webkit-keyframes slidein {\n    0% {\n      margin-left: -800px; }\n    20% {\n      margin-left: -800px; }\n    35% {\n      margin-left: 0px; }\n    100% {\n      margin-left: 0px; } }\n  @keyframes slidein {\n    0% {\n      margin-left: -800px; }\n    20% {\n      margin-left: -800px; }\n    35% {\n      margin-left: 0px; }\n    100% {\n      margin-left: 0px; } }\n  @-webkit-keyframes reveal {\n    0% {\n      opacity: 0;\n      width: 0px; }\n    20% {\n      opacity: 1;\n      width: 0px; }\n    30% {\n      width: 260px; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0;\n      width: 260px; } }\n  @keyframes reveal {\n    0% {\n      opacity: 0;\n      width: 0px; }\n    20% {\n      opacity: 1;\n      width: 0px; }\n    30% {\n      width: 260px; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0;\n      width: 260px; } }\n  .blog-card .description h1 {\n    font-size: 20px; }\n  .blog-card .description p {\n    font-size: 12px; }\n  .presentation-subtitle {\n    margin-top: -8%;\n    font-size: 14px; } }\n\n@media screen and (min-width: 600px) {\n  .revealing {\n    display: inline-block;\n    overflow: hidden;\n    white-space: nowrap;\n    margin-bottom: 0em; }\n  .revealing:first-of-type {\n    /* For increasing performance \n\t\t\t\t\t\t ID/Class should've been used. \n\t\t\t\t\t\t For a small demo \n\t\t\t\t\t\t it's okaish for now */\n    -webkit-animation: showup 7s infinite;\n            animation: showup 7s infinite; }\n  .revealing:last-of-type {\n    width: 0px;\n    -webkit-animation: reveal 7s infinite;\n            animation: reveal 7s infinite; }\n  .revealing:last-of-type span {\n    margin-left: -355px;\n    -webkit-animation: slidein 7s infinite;\n            animation: slidein 7s infinite; }\n  @-webkit-keyframes showup {\n    0% {\n      opacity: 0; }\n    20% {\n      opacity: 1; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0; } }\n  @keyframes showup {\n    0% {\n      opacity: 0; }\n    20% {\n      opacity: 1; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0; } }\n  @-webkit-keyframes slidein {\n    0% {\n      margin-left: -800px; }\n    20% {\n      margin-left: -800px; }\n    35% {\n      margin-left: 0px; }\n    100% {\n      margin-left: 0px; } }\n  @keyframes slidein {\n    0% {\n      margin-left: -800px; }\n    20% {\n      margin-left: -800px; }\n    35% {\n      margin-left: 0px; }\n    100% {\n      margin-left: 0px; } }\n  @-webkit-keyframes reveal {\n    0% {\n      opacity: 0;\n      width: 0px; }\n    20% {\n      opacity: 1;\n      width: 0px; }\n    30% {\n      width: 450px; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0;\n      width: 450px; } }\n  @keyframes reveal {\n    0% {\n      opacity: 0;\n      width: 0px; }\n    20% {\n      opacity: 1;\n      width: 0px; }\n    30% {\n      width: 450px; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0;\n      width: 450px; } }\n  .blog-card {\n    height: 200px;\n    max-width: 600px; }\n    .blog-card:hover .photo {\n      -webkit-transform: rotate(5deg) scale(1.3);\n              transform: rotate(5deg) scale(1.3); }\n    .blog-card:hover.alt .photo {\n      -webkit-transform: rotate(-5deg) scale(1.3);\n              transform: rotate(-5deg) scale(1.3); }\n    .blog-card.alt .details {\n      padding-left: 30px; }\n    .blog-card.alt .description {\n      float: right; }\n      .blog-card.alt .description:before {\n        -webkit-transform: skewX(5deg);\n                transform: skewX(5deg);\n        right: -15px;\n        left: inherit; }\n    .blog-card.alt .photo {\n      float: right; }\n    .blog-card .photo {\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      float: left;\n      height: 100%;\n      width: 40%; }\n    .blog-card .details {\n      width: 40%; }\n    .blog-card .description {\n      float: left;\n      width: 60%;\n      z-index: 0; }\n      .blog-card .description:before {\n        -webkit-transform: skewX(-5deg);\n                transform: skewX(-5deg);\n        content: \"\";\n        background: #fff;\n        width: 100%;\n        z-index: -1;\n        /*POSITION*/\n        position: absolute;\n        left: -15px;\n        top: 0;\n        bottom: 0; } }\n", ""]);
+exports.push([module.i, "/* Google Fonts */\n/*PEN STYLES*/\n/* Global */\nhtml {\n  min-height: 100%;\n  overflow: hidden; }\n\nbody {\n  height: calc(100vh - 8em);\n  padding: 4em;\n  color: rgba(255, 255, 255, 0.75);\n  font-family: 'Anonymous Pro', monospace;\n  background-color: #191919; }\n\nbody {\n  background: #f1f1f1;\n  margin: 2rem; }\n\n.page-header {\n  max-resolution: right -100px; }\n\n.blog-card {\n  transition: height 0.3s ease;\n  -webkit-transition: height 0.3s ease;\n  background: #fff;\n  border-radius: 3px;\n  box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);\n  margin: 0 auto 1.6%;\n  overflow: hidden;\n  position: relative;\n  font-size: 14px;\n  line-height: 1.45em;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale; }\n  .blog-card:hover .details {\n    left: 0; }\n  .blog-card:hover.alt .details {\n    right: 0; }\n  .blog-card.alt .details {\n    right: -100%;\n    left: inherit; }\n  .blog-card .photo {\n    height: 200px;\n    position: relative;\n    margin: auto; }\n  .blog-card .details {\n    min-height: 300px;\n    transition: all 0.3s ease;\n    -webkit-transition: all 0.3s ease;\n    background: rgba(0, 0, 0, 0.6);\n    box-sizing: border-box;\n    color: #fff;\n    font-family: \"Open Sans\";\n    list-style: none;\n    margin: 0;\n    padding: 10px 15px;\n    line-height: 1.5em;\n    /*POSITION*/\n    position: absolute;\n    top: 0;\n    left: -100%; }\n    .blog-card .details > li {\n      padding: 3px 0; }\n    .blog-card .details li:before,\n    .blog-card .details .tags ul:before {\n      font-family: FontAwesome;\n      margin-right: 10px;\n      vertical-align: middle; }\n    .blog-card .details .author:before {\n      content: \"\\F007\"; }\n    .blog-card .details .date:before {\n      content: \"\\F133\"; }\n    .blog-card .details .tags ul {\n      list-style: none;\n      margin: 0;\n      padding: 0; }\n      .blog-card .details .tags ul:before {\n        content: \"\\F02B\"; }\n    .blog-card .details .tags li {\n      display: inline-block;\n      margin-right: 3px; }\n    .blog-card .details a {\n      color: #87C4DB;\n      border-bottom: 1px dotted; }\n      .blog-card .details a:hover {\n        color: #87C4DB; }\n  .blog-card .description {\n    padding: 10px;\n    box-sizing: border-box;\n    position: relative;\n    min-height: 300px; }\n    .blog-card .description h1 {\n      font-family: \"Roboto\";\n      line-height: 1em;\n      margin: 0 0 10px 0;\n      font-size: 20px; }\n    .blog-card .description h2 {\n      color: #9b9b9b;\n      font-family: \"Open Sans\";\n      line-height: 1.2em;\n      text-transform: uppercase;\n      font-size: 1em;\n      font-weight: 400;\n      margin: 1.2% 0; }\n    .blog-card .description p {\n      position: relative;\n      margin: 0;\n      padding-top: 20px;\n      font-size: 12px; }\n      .blog-card .description p:after {\n        content: \"\";\n        background: #87C4DB;\n        height: 6px;\n        width: 40px;\n        /*POSITION*/\n        position: absolute;\n        top: 6px;\n        left: 0; }\n    .blog-card .description a {\n      color: #87C4DB;\n      margin-bottom: 20px;\n      float: right; }\n      .blog-card .description a:after {\n        transition: all 0.3s ease;\n        -webkit-transition: all 0.3s ease;\n        content: \"\\F061\";\n        font-family: FontAwesome;\n        margin-left: -10px;\n        opacity: 0;\n        vertical-align: middle; }\n      .blog-card .description a:hover:after {\n        margin-left: 5px;\n        opacity: 1; }\n\n@media screen and (max-width: 1000px) {\n  .blog-card .description h1 {\n    font-size: 18px; }\n  .blog-card .description p {\n    font-size: 11px; }\n  .presentation-subtitle {\n    font-size: 18px; } }\n\n@media screen and (max-width: 600px) {\n  .angular-logo {\n    max-width: 140px; }\n  .revealing {\n    display: inline-block;\n    overflow: hidden;\n    white-space: nowrap;\n    margin-bottom: 0em; }\n  .revealing:first-of-type {\n    /* For increasing performance \n\t\t\t\t\t\t ID/Class should've been used. \n\t\t\t\t\t\t For a small demo \n\t\t\t\t\t\t it's okaish for now */\n    -webkit-animation: showup 7s infinite;\n            animation: showup 7s infinite; }\n  .revealing:last-of-type {\n    width: 0px;\n    -webkit-animation: reveal 7s infinite;\n            animation: reveal 7s infinite; }\n  .revealing:last-of-type span {\n    margin-left: -355px;\n    -webkit-animation: slidein 7s infinite;\n            animation: slidein 7s infinite; }\n  @-webkit-keyframes showup {\n    0% {\n      opacity: 0; }\n    20% {\n      opacity: 1; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0; } }\n  @keyframes showup {\n    0% {\n      opacity: 0; }\n    20% {\n      opacity: 1; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0; } }\n  @-webkit-keyframes slidein {\n    0% {\n      margin-left: -800px; }\n    20% {\n      margin-left: -800px; }\n    35% {\n      margin-left: 0px; }\n    100% {\n      margin-left: 0px; } }\n  @keyframes slidein {\n    0% {\n      margin-left: -800px; }\n    20% {\n      margin-left: -800px; }\n    35% {\n      margin-left: 0px; }\n    100% {\n      margin-left: 0px; } }\n  @-webkit-keyframes reveal {\n    0% {\n      opacity: 0;\n      width: 0px; }\n    20% {\n      opacity: 1;\n      width: 0px; }\n    30% {\n      width: 260px; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0;\n      width: 260px; } }\n  @keyframes reveal {\n    0% {\n      opacity: 0;\n      width: 0px; }\n    20% {\n      opacity: 1;\n      width: 0px; }\n    30% {\n      width: 260px; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0;\n      width: 260px; } }\n  .blog-card .description h1 {\n    font-size: 20px; }\n  .blog-card .description p {\n    font-size: 12px; }\n  .presentation-subtitle {\n    margin-top: -8%;\n    font-size: 14px; } }\n\n@media screen and (min-width: 600px) {\n  .revealing {\n    display: inline-block;\n    overflow: hidden;\n    white-space: nowrap;\n    margin-bottom: 0em;\n    margin-top: 0em; }\n  .revealing:first-of-type {\n    /* For increasing performance \n\t\t\t\t\t\t ID/Class should've been used. \n\t\t\t\t\t\t For a small demo \n\t\t\t\t\t\t it's okaish for now */\n    -webkit-animation: showup 7s infinite;\n            animation: showup 7s infinite; }\n  .revealing:last-of-type {\n    width: 0px;\n    -webkit-animation: reveal 7s infinite;\n            animation: reveal 7s infinite; }\n  .revealing:last-of-type span {\n    margin-left: -355px;\n    -webkit-animation: slidein 7s infinite;\n            animation: slidein 7s infinite; }\n  @-webkit-keyframes showup {\n    0% {\n      opacity: 0; }\n    20% {\n      opacity: 1; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0; } }\n  @keyframes showup {\n    0% {\n      opacity: 0; }\n    20% {\n      opacity: 1; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0; } }\n  @-webkit-keyframes slidein {\n    0% {\n      margin-left: -800px; }\n    20% {\n      margin-left: -800px; }\n    35% {\n      margin-left: 0px; }\n    100% {\n      margin-left: 0px; } }\n  @keyframes slidein {\n    0% {\n      margin-left: -800px; }\n    20% {\n      margin-left: -800px; }\n    35% {\n      margin-left: 0px; }\n    100% {\n      margin-left: 0px; } }\n  @-webkit-keyframes reveal {\n    0% {\n      opacity: 0;\n      width: 0px; }\n    20% {\n      opacity: 1;\n      width: 0px; }\n    30% {\n      width: 450px; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0;\n      width: 450px; } }\n  @keyframes reveal {\n    0% {\n      opacity: 0;\n      width: 0px; }\n    20% {\n      opacity: 1;\n      width: 0px; }\n    30% {\n      width: 450px; }\n    80% {\n      opacity: 1; }\n    100% {\n      opacity: 0;\n      width: 450px; } }\n  .blog-card {\n    height: 200px;\n    max-width: 600px; }\n    .blog-card:hover .photo {\n      -webkit-transform: rotate(5deg) scale(1.3);\n              transform: rotate(5deg) scale(1.3); }\n    .blog-card:hover.alt .photo {\n      -webkit-transform: rotate(-5deg) scale(1.3);\n              transform: rotate(-5deg) scale(1.3); }\n    .blog-card.alt .details {\n      padding-left: 30px; }\n    .blog-card.alt .description {\n      float: right; }\n      .blog-card.alt .description:before {\n        -webkit-transform: skewX(5deg);\n                transform: skewX(5deg);\n        right: -15px;\n        left: inherit; }\n    .blog-card.alt .photo {\n      float: right; }\n    .blog-card .photo {\n      transition: all 0.5s ease;\n      -webkit-transition: all 0.5s ease;\n      float: left;\n      height: 100%;\n      width: 40%; }\n    .blog-card .details {\n      width: 40%; }\n    .blog-card .description {\n      float: left;\n      width: 60%;\n      z-index: 0; }\n      .blog-card .description:before {\n        -webkit-transform: skewX(-5deg);\n                transform: skewX(-5deg);\n        content: \"\";\n        background: #fff;\n        width: 100%;\n        z-index: -1;\n        /*POSITION*/\n        position: absolute;\n        left: -15px;\n        top: 0;\n        bottom: 0; } }\n", ""]);
 
 // exports
 
@@ -336,6 +315,7 @@ module.exports = module.exports.toString();
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArticleComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__post_service__ = __webpack_require__("../../../../../src/app/post.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -347,15 +327,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var ArticleComponent = (function () {
-    function ArticleComponent(p, ref) {
+    function ArticleComponent(p, ref, router) {
         var _this = this;
         this.p = p;
         this.ref = ref;
+        this.router = router;
         this.loading = true;
         this.posts = [];
         this.order = 'pubDate';
         this.header = '';
+        this.term = '';
         this.page = 1;
         function strip_html_tags(str) {
             if ((str === null) || (str === ''))
@@ -407,11 +390,240 @@ ArticleComponent = __decorate([
         providers: [__WEBPACK_IMPORTED_MODULE_1__post_service__["a" /* PostService */]],
         encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].Emulated
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__post_service__["a" /* PostService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__post_service__["a" /* PostService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__post_service__["a" /* PostService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__post_service__["a" /* PostService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* Router */]) === "function" && _c || Object])
 ], ArticleComponent);
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=article.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/article/article.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticleModule", function() { return ArticleModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__article_routing__ = __webpack_require__("../../../../../src/app/article/article.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__article_component__ = __webpack_require__("../../../../../src/app/article/article.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_components_module__ = __webpack_require__("../../../../../src/app/components/components.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ngx_pagination__ = __webpack_require__("../../../../ngx-pagination/dist/ngx-pagination.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_angular2_moment__ = __webpack_require__("../../../../angular2-moment/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_angular2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_angular2_moment__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ng2_search_filter__ = __webpack_require__("../../../../ng2-search-filter/ng2-search-filter.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_ngx_order_pipe__ = __webpack_require__("../../../../ngx-order-pipe/ngx-order-pipe.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_ngx_loading__ = __webpack_require__("../../../../ngx-loading/ngx-loading/ngx-loading.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_ngx_sharebuttons__ = __webpack_require__("../../../../ngx-sharebuttons/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__post_post_component__ = __webpack_require__("../../../../../src/app/article/post/post.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var ArticleModule = (function () {
+    function ArticleModule() {
+    }
+    return ArticleModule;
+}());
+ArticleModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_3__ng_bootstrap_ng_bootstrap__["c" /* NgbModule */].forRoot(),
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormsModule"],
+            __WEBPACK_IMPORTED_MODULE_6__angular_router__["d" /* RouterModule */],
+            __WEBPACK_IMPORTED_MODULE_5__article_routing__["a" /* ArticleRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_8__components_components_module__["a" /* ComponentsModule */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClientModule */],
+            __WEBPACK_IMPORTED_MODULE_9_ngx_pagination__["a" /* NgxPaginationModule */],
+            __WEBPACK_IMPORTED_MODULE_10_angular2_moment__["MomentModule"],
+            __WEBPACK_IMPORTED_MODULE_11_ng2_search_filter__["a" /* Ng2SearchPipeModule */],
+            __WEBPACK_IMPORTED_MODULE_12_ngx_order_pipe__["a" /* OrderModule */],
+            __WEBPACK_IMPORTED_MODULE_13_ngx_loading__["a" /* LoadingModule */],
+            __WEBPACK_IMPORTED_MODULE_14_ngx_sharebuttons__["a" /* ShareButtonsModule */].forRoot(),
+        ],
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_7__article_component__["a" /* ArticleComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__post_post_component__["a" /* PostComponent */]
+        ],
+        exports: [__WEBPACK_IMPORTED_MODULE_7__article_component__["a" /* ArticleComponent */],
+            __WEBPACK_IMPORTED_MODULE_15__post_post_component__["a" /* PostComponent */]],
+        providers: []
+    })
+], ArticleModule);
+
+//# sourceMappingURL=article.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/article/article.routing.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArticleRoutingModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__post_post_component__ = __webpack_require__("../../../../../src/app/article/post/post.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__article_component__ = __webpack_require__("../../../../../src/app/article/article.component.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'article', component: __WEBPACK_IMPORTED_MODULE_4__article_component__["a" /* ArticleComponent */] },
+    { path: 'article/:id', component: __WEBPACK_IMPORTED_MODULE_3__post_post_component__["a" /* PostComponent */] }
+];
+var ArticleRoutingModule = (function () {
+    function ArticleRoutingModule() {
+    }
+    return ArticleRoutingModule;
+}());
+ArticleRoutingModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* RouterModule */].forChild(routes)
+        ],
+        exports: [],
+    })
+], ArticleRoutingModule);
+
+//# sourceMappingURL=article.routing.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/article/post/post.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"header-post\">\n    <div class=\"row\">\n        <div class=\"col-md-7 col-lg-5 col-9\" style=\"margin: auto\">\n            <div class=\"icon icon-primary\" [routerLink]=\"['/article']\">\n                <i class=\"nc-icon nc-minimal-left\"></i> Back to Geekydea\n            </div>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"icon-bar\">\n            <button class=\"twitter btn\" shareButton=\"twitter\" [sbUrl]=\"post.link\" [sbTags]=\"post.categories\" [sbDescription]=\"shareDescription\">\n                <i class=\"fa fa-twitter\"></i>\n            </button>\n            <button class=\"facebook btn\" shareButton=\"facebook\" [sbUrl]=\"post.link\" [sbTags]=\"post.categories\" [sbDescription]=\"shareDescription\">\n                <i class=\"fa fa-facebook\"></i>\n            </button>\n            <button class=\"linkedin btn\" shareButton=\"linkedin\" [sbUrl]=\"post.link\" [sbTags]=\"post.categories\" [sbDescription]=\"shareDescription\">\n                <i class=\"fa fa-linkedin\"></i>\n            </button>\n        </div>\n        <ngx-loading [show]=\"loading\" [config]=\"{ backdropBorderRadius: '14px' }\"></ngx-loading>\n        <br>\n        <div class=\"col-md-7 col-lg-5 col-sm-10 col-10 inside\" style=\"margin:auto\">\n            <h2>{{ post.title }}\n                <br>\n                <small>by : {{ post.author }}</small>\n            </h2>\n            <br>\n            <h5 class=\"inside\">{{ post.pubDate | amLocale:'en' | amDateFormat:'MMMM Do YYYY, h:mm:ss a' }} - {{post.est_reading_time}} mins\n                read\n            </h5>\n            <hr>\n            <br>\n            <div class=\"col-12\">\n                <div class=\"inside\" [innerHTML]=\"post.content\"></div>\n            </div>\n            <hr>\n            <div class=\"tim-title\">\n                <h3>Categories</h3>\n            </div>\n            <span class=\"label label-primary\" *ngFor=\"let category of post.categories\">{{ category }}</span>\n            <br>\n            <br>\n            <hr>\n        </div>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/article/post/post.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "@charset \"UTF-8\";\n.inside img {\n  width: 100% !important;\n  height: auto !important;\n  margin: auto; }\n\n.inside p {\n  text-align: justify;\n  font-size: 18px;\n  margin-bottom: 30px; }\n\n.inside h2 {\n  font-weight: 500; }\n\n.inside h5 {\n  margin-left: 1%;\n  font-weight: 400; }\n\n.inside figcaption {\n  text-align: center; }\n\n.inside blockquote {\n  margin: 0 auto 5%;\n  padding: 1em;\n  border-left: 5px solid #999;\n  font-size: 14pt;\n  font-style: oblique; }\n\n.inside blockquote:before {\n  display: none; }\n\n.inside blockquote:not(:first-of-type) {\n  margin-top: .5em; }\n\n.inside blockquote p {\n  color: #555;\n  line-height: 1.4;\n  font-family: 'PT Serif', Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif; }\n\n.inside blockquote footer {\n  margin-top: .5em;\n  padding: 0;\n  color: #777;\n  font-size: 12pt;\n  text-align: left;\n  font-style: italic; }\n\n.inside blockquote footer:before {\n  content: '\\2014   '; }\n\n.inside h3 {\n  margin-bottom: 5%; }\n\n/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */\n.icon-bar {\n  position: fixed;\n  top: 50%;\n  right: 0%;\n  -webkit-transform: translateY(-50%);\n  transform: translateY(-50%); }\n\n/* Style the icon bar links */\n.icon-bar button {\n  display: block;\n  text-align: center;\n  padding: 16px;\n  color: white;\n  font-size: 18px;\n  border-color: transparent;\n  border-radius: 0%; }\n\n/* Style the social media icons with color, if you want */\n.icon-bar button:hover {\n  background-color: #000; }\n\n.facebook {\n  background: #3B5998;\n  color: white; }\n\n.twitter {\n  background: #55ACEE;\n  color: white; }\n\n.google {\n  background: #dd4b39;\n  color: white; }\n\n.linkedin {\n  background: #007bb5;\n  color: white; }\n\n.header-post {\n  margin-top: 10%; }\n  .header-post i {\n    cursor: pointer; }\n  .header-post .icon {\n    cursor: pointer; }\n\n@media screen and (max-width: 991px) {\n  .icon-bar {\n    left: 0%; } }\n\n@media screen and (max-width: 600px) {\n  .icon-bar button {\n    padding: 6px;\n    font-size: 12px; }\n  .inside h2 {\n    font-size: 22px; }\n  .inside h5 {\n    font-size: 12px; }\n  .inside p {\n    font-size: 13px; }\n  .inside blockquote {\n    font-size: 14px; }\n  .header-post {\n    margin-top: 30%; } }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/article/post/post.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PostComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__post_service__ = __webpack_require__("../../../../../src/app/post.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var PostComponent = (function () {
+    function PostComponent(route, p) {
+        var _this = this;
+        this.route = route;
+        this.p = p;
+        this.loading = true;
+        this.posts = [];
+        this.shareDescription = "Read this well-written article. Hope you enjoy it";
+        function strip_html_tags(str) {
+            if ((str === null) || (str === ''))
+                return false;
+            else
+                str = str.toString();
+            return str.replace(/<[^>]*>/g, '');
+        }
+        this.route.params.forEach(function (params) {
+            var id = +params['id'];
+            //Post
+            var post_id = params['id'];
+            _this.p.getAll().subscribe(function (r) {
+                _this.loading = false;
+                _this.posts = r.items;
+                _this.posts.forEach(function (post) {
+                    var myString = strip_html_tags(post.description);
+                    var averageWPM = 265;
+                    var seo_route = post.title.replace(/[\W_]+/g, "-").toLowerCase() + '-';
+                    post['id'] = seo_route + post.guid.replace("https://medium.com/p/", "");
+                    post['est_reading_time'] = Math.ceil(myString.split(" ").length / averageWPM);
+                });
+                _this.post = _this.posts.find(function (element) {
+                    return element.id == post_id;
+                });
+            }, function (error) {
+                _this.loading = false;
+                console.error('Error: ' + error);
+            });
+        });
+    }
+    PostComponent.prototype.ngOnInit = function () {
+    };
+    return PostComponent;
+}());
+PostComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-post',
+        template: __webpack_require__("../../../../../src/app/article/post/post.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/article/post/post.component.scss")],
+        encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
+        providers: [__WEBPACK_IMPORTED_MODULE_2__post_service__["a" /* PostService */]]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__post_service__["a" /* PostService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__post_service__["a" /* PostService */]) === "function" && _b || Object])
+], PostComponent);
+
+var _a, _b;
+//# sourceMappingURL=post.component.js.map
 
 /***/ }),
 
@@ -981,7 +1193,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);", ""]);
 
 // module
-exports.push([module.i, "/* Google Fonts */\n/* Global */\nhtml {\n  min-height: 100%;\n  overflow: hidden; }\n\nbody {\n  height: calc(100vh - 8em);\n  padding: 4em;\n  color: rgba(255, 255, 255, 0.75);\n  font-family: 'Anonymous Pro', monospace;\n  background-color: #191919; }\n\n.line-1 {\n  position: relative;\n  top: 90%;\n  width: 24em;\n  margin: 0 auto;\n  border-right: 2px solid rgba(255, 255, 255, 0.75);\n  font-size: 180%;\n  text-align: center;\n  white-space: nowrap;\n  overflow: hidden;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%); }\n\n/* Animation */\n.anim-typewriter {\n  -webkit-animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 750ms steps(44) infinite normal;\n          animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 750ms steps(44) infinite normal; }\n\n@-webkit-keyframes typewriter {\n  from {\n    width: 0; }\n  to {\n    width: 8em; } }\n\n@keyframes typewriter {\n  from {\n    width: 0; }\n  to {\n    width: 8em; } }\n\n@-webkit-keyframes blinkTextCursor {\n  from {\n    border-right-color: rgba(255, 255, 255, 0.75); }\n  to {\n    border-right-color: transparent; } }\n\n@keyframes blinkTextCursor {\n  from {\n    border-right-color: rgba(255, 255, 255, 0.75); }\n  to {\n    border-right-color: transparent; } }\n\n.button {\n  display: inline-block; }\n\n.button span {\n  transition: 0.6s;\n  transition-delay: 0.2s; }\n\n.button:before,\n.button:after {\n  content: '';\n  position: absolute;\n  top: 0.67em;\n  left: 0;\n  width: 100%;\n  text-align: center;\n  opacity: 0;\n  transition: .4s,opacity .6s; }\n\n/* :before */\n.button:before {\n  content: attr(data-hover);\n  -webkit-transform: translate(-150%, 0);\n  transform: translate(-150%, 0); }\n\n/* :after */\n.button:after {\n  content: attr(data-active);\n  -webkit-transform: translate(150%, 0);\n  transform: translate(150%, 0); }\n\n/* Span on :hover and :active */\n.button:hover span,\n.button:active span {\n  opacity: 0;\n  -webkit-transform: scale(0.3);\n  transform: scale(0.3); }\n\n/*  \r\n  We show :before pseudo-element on :hover \r\n  and :after pseudo-element on :active \r\n*/\n.button:hover:before,\n.button:active:after {\n  opacity: 1;\n  -webkit-transform: translate(0, 0);\n  transform: translate(0, 0);\n  transition-delay: .4s; }\n\n/* \r\nWe hide :before pseudo-element on :active\r\n*/\n.button:active:before {\n  -webkit-transform: translate(-150%, 0);\n  transform: translate(-150%, 0);\n  transition-delay: 0s; }\n", ""]);
+exports.push([module.i, "/* Google Fonts */\n/* Global */\nhtml {\n  min-height: 100%;\n  overflow: hidden; }\n\nbody {\n  height: calc(100vh - 8em);\n  padding: 4em;\n  color: rgba(255, 255, 255, 0.75);\n  font-family: 'Anonymous Pro', monospace;\n  background-color: #191919; }\n\n.line-1 {\n  position: relative;\n  top: 90%;\n  width: 24em;\n  margin: 0 auto;\n  border-right: 2px solid rgba(255, 255, 255, 0.75);\n  font-size: 180%;\n  text-align: center;\n  white-space: nowrap;\n  overflow: hidden;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%); }\n\n/* Animation */\n.anim-typewriter {\n  -webkit-animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 750ms steps(44) infinite normal;\n          animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 750ms steps(44) infinite normal; }\n\n@-webkit-keyframes typewriter {\n  from {\n    width: 0; }\n  to {\n    width: 8em; } }\n\n@keyframes typewriter {\n  from {\n    width: 0; }\n  to {\n    width: 8em; } }\n\n@-webkit-keyframes blinkTextCursor {\n  from {\n    border-right-color: rgba(255, 255, 255, 0.75); }\n  to {\n    border-right-color: transparent; } }\n\n@keyframes blinkTextCursor {\n  from {\n    border-right-color: rgba(255, 255, 255, 0.75); }\n  to {\n    border-right-color: transparent; } }\n\n.button {\n  display: inline-block; }\n\n.button span {\n  transition: 0.6s;\n  transition-delay: 0.2s; }\n\n.button:before,\n.button:after {\n  content: '';\n  position: absolute;\n  top: 0.67em;\n  left: 0;\n  width: 100%;\n  text-align: center;\n  opacity: 0;\n  transition: .4s,opacity .6s; }\n\n/* :before */\n.button:before {\n  content: attr(data-hover);\n  -webkit-transform: translate(-150%, 0);\n  transform: translate(-150%, 0); }\n\n/* :after */\n.button:after {\n  content: attr(data-active);\n  -webkit-transform: translate(150%, 0);\n  transform: translate(150%, 0); }\n\n/* Span on :hover and :active */\n.button:hover span,\n.button:active span {\n  opacity: 0;\n  -webkit-transform: scale(0.3);\n  transform: scale(0.3); }\n\n/*  \r\n  We show :before pseudo-element on :hover \r\n  and :after pseudo-element on :active \r\n*/\n.button:hover:before,\n.button:active:after {\n  opacity: 1;\n  -webkit-transform: translate(0, 0);\n  transform: translate(0, 0);\n  transition-delay: .4s; }\n\n/* \r\nWe hide :before pseudo-element on :active\r\n*/\n.button:active:before {\n  -webkit-transform: translate(-150%, 0);\n  transform: translate(-150%, 0);\n  transition-delay: 0s; }\n\n@media screen and (max-width: 600px) {\n  .angular-logo {\n    max-width: 150px; }\n  h1 .presentation-title {\n    size: 11px; } }\n", ""]);
 
 // exports
 
@@ -998,7 +1210,6 @@ module.exports = module.exports.toString();
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_service__ = __webpack_require__("../../../../../src/app/home/login.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1010,10 +1221,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
 var HomeComponent = (function () {
-    function HomeComponent(loginService, router) {
-        this.loginService = loginService;
+    function HomeComponent(router) {
         this.router = router;
         this.model = {
             left: true,
@@ -1030,12 +1239,12 @@ HomeComponent = __decorate([
         selector: 'app-home',
         template: __webpack_require__("../../../../../src/app/home/home.component.html"),
         styles: [__webpack_require__("../../../../../src/app/home/home.component.scss")],
-        providers: [__WEBPACK_IMPORTED_MODULE_2__login_service__["a" /* LoginService */]]
+        providers: []
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__login_service__["a" /* LoginService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__login_service__["a" /* LoginService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* Router */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* Router */]) === "function" && _a || Object])
 ], HomeComponent);
 
-var _a, _b;
+var _a;
 //# sourceMappingURL=home.component.js.map
 
 /***/ }),
@@ -1045,21 +1254,19 @@ var _a, _b;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__login_service__ = __webpack_require__("../../../../../src/app/home/login.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_components_module__ = __webpack_require__("../../../../../src/app/components/components.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/@angular/platform-browser.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_components_module__ = __webpack_require__("../../../../../src/app/components/components.module.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
 
 
 
@@ -1073,61 +1280,21 @@ var HomeModule = (function () {
     return HomeModule;
 }());
 HomeModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["NgModule"])({
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["NgModule"])({
         imports: [
-            __WEBPACK_IMPORTED_MODULE_3__angular_common__["b" /* CommonModule */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_4__angular_forms__["FormsModule"],
-            __WEBPACK_IMPORTED_MODULE_5__angular_router__["d" /* RouterModule */],
-            __WEBPACK_IMPORTED_MODULE_7__components_components_module__["a" /* ComponentsModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_common__["b" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormsModule"],
+            __WEBPACK_IMPORTED_MODULE_4__angular_router__["d" /* RouterModule */],
+            __WEBPACK_IMPORTED_MODULE_6__components_components_module__["a" /* ComponentsModule */],
         ],
-        declarations: [__WEBPACK_IMPORTED_MODULE_6__home_component__["a" /* HomeComponent */]],
-        exports: [__WEBPACK_IMPORTED_MODULE_6__home_component__["a" /* HomeComponent */]],
-        providers: [__WEBPACK_IMPORTED_MODULE_0__login_service__["a" /* LoginService */]]
+        declarations: [__WEBPACK_IMPORTED_MODULE_5__home_component__["a" /* HomeComponent */]],
+        exports: [__WEBPACK_IMPORTED_MODULE_5__home_component__["a" /* HomeComponent */]],
+        providers: []
     })
 ], HomeModule);
 
 //# sourceMappingURL=home.module.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/home/login.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/@angular/common/http.es5.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var LoginService = (function () {
-    function LoginService(http) {
-        this.http = http;
-    }
-    LoginService.prototype.validateLogin = function (user) {
-        return this.http.post('/api/user/login', {
-            username: user.username,
-            password: user.password
-        });
-    };
-    return LoginService;
-}());
-LoginService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
-], LoginService);
-
-var _a;
-//# sourceMappingURL=login.service.js.map
 
 /***/ }),
 
@@ -1155,7 +1322,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var PostService = (function () {
     function PostService(http) {
         this.http = http;
-        this.endpoint = "https://medium.com/feed/@christian.wibisono7";
+        this.endpoint = "https://medium.com/feed/@christianwbsn";
     }
     PostService.prototype.getAll = function () {
         return this.http.get('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURI(this.endpoint))
@@ -1173,114 +1340,10 @@ var _a;
 
 /***/ }),
 
-/***/ "../../../../../src/app/post/post.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"header-post\">\n    <div class=\"row\">\n        <div class=\"col-md-7 col-lg-5 col-9\" style=\"margin: auto\">\n            <div class=\"icon icon-primary\" [routerLink]=\"['/article']\">\n                <i class=\"nc-icon nc-minimal-left\"></i> Back to Geekydea\n            </div>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"icon-bar\">\n            <button class=\"twitter btn\" shareButton=\"twitter\" [sbUrl]=\"post.link\" [sbTags]=\"post.categories\" [sbDescription]=\"shareDescription\">\n                <i class=\"fa fa-twitter\"></i>\n            </button>\n            <button class=\"facebook btn\" shareButton=\"facebook\" [sbUrl]=\"post.link\" [sbTags]=\"post.categories\" [sbDescription]=\"shareDescription\">\n                <i class=\"fa fa-facebook\"></i>\n            </button>\n            <button class=\"linkedin btn\" shareButton=\"linkedin\" [sbUrl]=\"post.link\" [sbTags]=\"post.categories\" [sbDescription]=\"shareDescription\">\n                <i class=\"fa fa-linkedin\"></i>\n            </button>\n            <!-- <button class=\"google btn\" shareButton=\"google\" [sbUrl]=\"post.link\" [sbTags]=\"post.categories\" [sbDescription]=\"shareDescription\">\n                <i class=\"fa fa-google\"></i>\n            </button> -->\n        </div>\n        <ngx-loading [show]=\"loading\" [config]=\"{ backdropBorderRadius: '14px' }\"></ngx-loading>\n        <br>\n        <div class=\"col-md-7 col-lg-5 col-sm-10 col-10 inside\" style=\"margin:auto\">\n            <h2>{{ post.title }}\n                <br>\n                <small>by : {{ post.author }}</small>\n            </h2>\n            <br>\n            <h5 class=\"inside\">{{ post.pubDate | amLocale:'en' | amDateFormat:'MMMM Do YYYY, h:mm:ss a' }} - {{post.est_reading_time}} mins\n                read\n            </h5>\n            <hr>\n            <br>\n            <div class=\"col-12\">\n                <div class=\"inside\" [innerHTML]=\"post.content\"></div>\n            </div>\n            <hr>\n            <div class=\"tim-title\">\n                <h3>Categories</h3>\n            </div>\n            <span class=\"label label-primary\" *ngFor=\"let category of post.categories\">{{ category }}</span>\n            <br>\n            <br>\n            <hr>\n        </div>\n    </div>\n</div>"
-
-/***/ }),
-
-/***/ "../../../../../src/app/post/post.component.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "@charset \"UTF-8\";\n.inside img {\n  width: 100% !important;\n  height: auto !important;\n  margin: auto; }\n\n.inside p {\n  text-align: justify;\n  font-size: 18px;\n  margin-bottom: 30px; }\n\n.inside h2 {\n  font-weight: 500; }\n\n.inside h5 {\n  margin-left: 1%;\n  font-weight: 400; }\n\n.inside figcaption {\n  text-align: center; }\n\n.inside blockquote {\n  margin: 0 auto 5%;\n  padding: 1em;\n  border-left: 5px solid #999;\n  font-size: 14pt;\n  font-style: oblique; }\n\n.inside blockquote:before {\n  display: none; }\n\n.inside blockquote:not(:first-of-type) {\n  margin-top: .5em; }\n\n.inside blockquote p {\n  color: #555;\n  line-height: 1.4;\n  font-family: 'PT Serif', Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif; }\n\n.inside blockquote footer {\n  margin-top: .5em;\n  padding: 0;\n  color: #777;\n  font-size: 12pt;\n  text-align: left;\n  font-style: italic; }\n\n.inside blockquote footer:before {\n  content: '\\2014   '; }\n\n.inside h3 {\n  margin-bottom: 5%; }\n\n/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */\n.icon-bar {\n  position: fixed;\n  top: 50%;\n  right: 0%;\n  -webkit-transform: translateY(-50%);\n  transform: translateY(-50%); }\n\n/* Style the icon bar links */\n.icon-bar button {\n  display: block;\n  text-align: center;\n  padding: 16px;\n  color: white;\n  font-size: 18px;\n  border-color: transparent;\n  border-radius: 0%; }\n\n/* Style the social media icons with color, if you want */\n.icon-bar button:hover {\n  background-color: #000; }\n\n.facebook {\n  background: #3B5998;\n  color: white; }\n\n.twitter {\n  background: #55ACEE;\n  color: white; }\n\n.google {\n  background: #dd4b39;\n  color: white; }\n\n.linkedin {\n  background: #007bb5;\n  color: white; }\n\n.header-post {\n  margin-top: 10%; }\n  .header-post i {\n    cursor: pointer; }\n  .header-post .icon {\n    cursor: pointer; }\n\n@media screen and (max-width: 991px) {\n  .icon-bar {\n    left: 0%; } }\n\n@media screen and (max-width: 600px) {\n  .icon-bar button {\n    padding: 6px;\n    font-size: 12px; }\n  .inside h2 {\n    font-size: 22px; }\n  .inside h5 {\n    font-size: 12px; }\n  .inside p {\n    font-size: 13px; }\n  .inside blockquote {\n    font-size: 14px; }\n  .header-post {\n    margin-top: 30%; } }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/post/post.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PostComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__post_service__ = __webpack_require__("../../../../../src/app/post.service.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var PostComponent = (function () {
-    function PostComponent(route, p) {
-        var _this = this;
-        this.route = route;
-        this.p = p;
-        this.loading = true;
-        this.posts = [];
-        this.post = {};
-        this.shareDescription = "Read this well-written article. Hope you enjoy it";
-        function strip_html_tags(str) {
-            if ((str === null) || (str === ''))
-                return false;
-            else
-                str = str.toString();
-            return str.replace(/<[^>]*>/g, '');
-        }
-        this.route.params.forEach(function (params) {
-            var id = +params['id'];
-            //Post
-            var post_id = params['id'];
-            _this.p.getAll().subscribe(function (r) {
-                _this.loading = false;
-                _this.posts = r.items;
-                _this.posts.forEach(function (post) {
-                    var myString = strip_html_tags(post.description);
-                    var averageWPM = 265;
-                    var seo_route = post.title.replace(/[\W_]+/g, "-").toLowerCase() + '-';
-                    post['id'] = seo_route + post.guid.replace("https://medium.com/p/", "");
-                    post['est_reading_time'] = Math.ceil(myString.split(" ").length / averageWPM);
-                });
-                _this.post = _this.posts.find(function (element) {
-                    return element.id == post_id;
-                });
-            }, function (error) {
-                _this.loading = false;
-                console.error('Error: ' + error);
-            });
-        });
-    }
-    PostComponent.prototype.ngOnInit = function () {
-    };
-    return PostComponent;
-}());
-PostComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-post',
-        template: __webpack_require__("../../../../../src/app/post/post.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/post/post.component.scss")],
-        encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
-        providers: [__WEBPACK_IMPORTED_MODULE_2__post_service__["a" /* PostService */]]
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__post_service__["a" /* PostService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__post_service__["a" /* PostService */]) === "function" && _b || Object])
-], PostComponent);
-
-var _a, _b;
-//# sourceMappingURL=post.component.js.map
-
-/***/ }),
-
 /***/ "../../../../../src/app/profile/profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"wrapper\">\n    <div class=\"page-header page-header-xs\" data-parallax=\"true\" style=\"background-image: url('../assets/img/profile-banner_1.jpg');\">\n        <div class=\"filter\"></div>\n    </div>\n    <div class=\"section profile-content\">\n        <div class=\"container\">\n            <div class=\"owner\">\n                <div class=\"avatar\">\n                    <img src=\"../assets/img/faces/SAM_1807.jpg\" alt=\"Circle Image\" class=\"img-circle img-no-padding img-responsive\">\n                </div>\n                <div class=\"name\">\n                    <h4 class=\"title\">Christian Wibisono\n                        <br />\n                    </h4>\n                    <h6 class=\"description\">Informatics Student of Institut Teknologi Bandung </h6>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-md-9 ml-auto mr-auto text-center\">\n                    <p>Machine Learning and Data-Driven Business Enthusiast.\n                        <a href=\"https://en.wikipedia.org/wiki/T-shaped_skills\">T-Shaped</a>\n                        INTP who loves to learn new things and create solutions. Interested in technology, especially in machine learning and data\n                        analytics. Hard worker with a strong analytical skill. I believe that big things happen when we do\n                        little things right.\n                    </p>\n                    <br>\n                    <a class=\"btn btn-outline-primary btn-round\" href=\"https://docs.google.com/document/d/1v3SGydIRSNZwe18MS-r2_rOCErGjisFbe0CnDMdiPQw/edit?usp=sharing\">\n                        <i class=\"fa fa-clipboard\"></i> Resume</a>\n                    <a class=\"btn btn-outline-primary btn-just-icon\" href=\"https://www.linkedin.com/in/christian-wibisono-9b3579137/\">\n                        <i class=\"fa fa-linkedin\"></i>\n                    </a>\n                    <a class=\"btn btn-outline-primary btn-just-icon\" href=\"https://www.github.com/christianwbsn\">\n                        <i class=\"fa fa-github\"></i>\n                    </a>\n                    <br>\n                    <br>\n                </div>\n            </div>\n            <br/>\n            <div class=\"nav-tabs-navigation col-md-10 col-lg-10 col-sm-10\" style=\"margin:auto\">\n                <div class=\"nav-tabs-wrapper\">\n                    <ngb-tabset [justify]=\"'center'\" class=\"nav justify-content-center tab-space\">\n                        <ngb-tab>\n                            <ng-template ngbTabTitle>\n                                <i class=\"fa fa-graduation-cap\"></i> Education\n                            </ng-template>\n                            <ng-template ngbTabContent>\n                                <table class=\"table table-striped\">\n                                    <thead>\n                                        <tr>\n                                            <th style=\"text-align:center\">Degree</th>\n                                            <th style=\"text-align:center\">Institution</th>\n                                            <th style=\"text-align:center\">Major</th>\n                                            <th>Year</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr>\n                                            <th scope=\"row\">Bachelor Degree</th>\n                                            <td>Institut Teknologi Bandung</td>\n                                            <td>Informatics Engineering</td>\n                                            <td>2020</td>\n                                        </tr>\n                                        <tr>\n                                            <th scope=\"row\">High School</th>\n                                            <td>SMA N 1 Surakarta</td>\n                                            <td>Natural Science</td>\n                                            <td>2016</td>\n                                        </tr>\n                                        <tr>\n                                            <th scope=\"row\">Middle School</th>\n                                            <td>SMP PL Bintang Laut</td>\n                                            <td></td>\n                                            <td>2013</td>\n                                        </tr>\n                                    </tbody>\n                                </table>\n                            </ng-template>\n                        </ngb-tab>\n                        <ngb-tab>\n                            <ng-template ngbTabTitle>\n                                <i class=\"fa fa-laptop\"></i> Skills\n                            </ng-template>\n                            <ng-template ngbTabContent>\n                                <ul class=\"list-group list-group-flush\">\n                                    <ul class=\"list-group-item\">\n                                        <div class=\"w-100 justify-content-between\">\n                                            <h5 class=\"mb-1\" id=\"skill\">\n                                                <strong> Web Development </strong>\n                                            </h5>\n                                        </div>\n                                        <li class=\"mb-1\">Front-End : React, Angular</li>\n                                        <li class=\"mb-1\">Back-End : Node, Express, Flask, Go</li>\n                                        <li class=\"mb-1\">Database : MySQL, MongoDB, PostgreSQL</li>\n                                        <small>Familiar with: HTML, CSS, Javascript </small>\n                                    </ul>\n                                    <ul class=\"list-group-item\" style=\"text-align:right\">\n                                        <h5 id=\"skill\">\n                                            <strong> Machine Learning and Artificial Intelligence </strong>\n                                        </h5>\n                                        <p>Tools: ScikitLearn, Keras(Tensorflow), NLTK</p>\n                                        <small style=\"text-align:right\">Comfortable using Jupyter Notebook in Python / R</small>\n                                    </ul>\n                                    <ul class=\"list-group-item\">\n                                        <h5 class=\"mb-1\" id=\"skill\">\n                                            <strong> Others </strong>\n                                        </h5>\n                                        <li class=\"mb-1\">Language: C++, C, Python, Java, Pascal, Haskell, Ruby</li>\n                                        <small>Comfortable using Git Version Control</small>\n                                    </ul>\n                                </ul>\n                            </ng-template>\n                        </ngb-tab>\n                        <ngb-tab>\n                            <ng-template ngbTabTitle>\n                                <i class=\"fa fa-briefcase\"></i> Experiences\n                            </ng-template>\n                            <ng-template ngbTabContent>\n                                <div class=\"list-group list-group-flush\">\n                                    <div class=\"list-group-item list-group-item-action flex-column align-items-start\">\n                                        <div class=\"d-flex w-100 justify-content-between\">\n                                            <h6 class=\"mb-1\">\n                                                <strong id=\"company\">Tokopedia</strong>\n                                                <small>Software Engineer Intern</small>\n                                            </h6>\n                                            <small>May-August 2018</small>\n                                        </div>\n                                        <small> Jakarta, Indonesia</small>\n                                        <br>\n                                        <br>\n                                        <p style=\"text-align:justify\">Build Human Resource Information System (HRIS) dashboard and E-Learning for People\n                                            Development (HR)</p>\n                                    </div>\n                                    <div class=\"list-group-item list-group-item-action flex-column align-items-start\">\n                                        <div class=\"d-flex w-100 justify-content-between\">\n                                            <h6 class=\"mb-1\">\n                                                <strong id=\"company\">Ahlijasa</strong>\n                                                <small> Software Engineer Intern </small>\n                                            </h6>\n                                            <small>June-August 2017</small>\n                                        </div>\n                                        <small>Tangerang,Indonesia</small>\n                                        <br>\n                                        <br>\n                                        <p style=\"text-align:justify\">Managed to build sustainable dashboard for the operation team. Gain and visualize\n                                            insight from data. Create some features to simplify driver’s order balancing,\n                                            order monitoring, and helped Ahlijasa to formulate expansion strategy. Increased\n                                            around 40% in better driver performance (on-time rate and behavior). Built using\n                                            Angular 4 and Google Maps API.</p>\n                                    </div>\n                                </div>\n                            </ng-template>\n                        </ngb-tab>\n                        <ngb-tab>\n                            <ng-template ngbTabTitle>\n                                <i class=\"fa fa-sitemap\"></i> Organizations\n                            </ng-template>\n                            <ng-template ngbTabContent>\n                                <div class=\"card-deck\">\n                                    <div class=\"card\">\n                                        <img class=\"card-img-top\" src=\"assets/img/logo_iit.jpg\" alt=\"Card image cap\">\n                                        <h5 class=\"card-footer\">\n                                            Vice Chairman of Pengembangan Wawasan dan Karya HMIF\n                                        </h5>\n                                    </div>\n                                    <div class=\"card\">\n                                        <img class=\"card-img-top\" src=\"assets/img/logo_arc.jpeg\" alt=\"Card image cap\">\n                                        <h5 class=\"card-footer\">\n                                            Knowledge Development Division of Amateur Radio Club (ARC) ITB\n                                        </h5>\n                                        <a href=\"http://www.arc.itb.ac.id\" class=\"card-link\">See more..</a>\n                                    </div>\n                                    <div class=\"card\">\n                                        <img class=\"card-img-top\" src=\"assets/img/logo_ksep.jpg\" alt=\"Card image cap\">\n                                        <h5 class=\"card-footer\">\n                                            Member of Economy and Stock Market Study Club (KSEP) ITB\n                                        </h5>\n                                        <a href=\"https://www.ksepitb.com/\" class=\"card-link\">See more..</a>\n                                    </div>\n                                </div>\n                            </ng-template>\n                        </ngb-tab>\n                        <ngb-tab>\n                            <ng-template ngbTabTitle>\n                                <i class=\"fa fa-star\"></i> Honors\n                            </ng-template>\n                            <ng-template ngbTabContent>\n                                <img src=\"assets/img/CSLeaders_Logo.png\" class=\"img-no-padding img-responsive\" alt=\"CSL Logo\">\n                                <h3>Awardee of CS Leaders Scholarship</h3>\n                                <br>\n                                <p>A four-year full scholarship and leadership development program for computer science undergraduate\n                                    at UI and ITB initiated by Peng T. Ong</p>\n                                <br>\n                                <a href=\"https://www.csleaders.org\">More about CS Leaders</a>\n                            </ng-template>\n                        </ngb-tab>\n                        <ngb-tab>\n                            <ng-template ngbTabTitle>\n                                <i class=\"fa fa-trophy\"></i> Awards\n                            </ng-template>\n                            <ng-template ngbTabContent>\n                                <div class=\"col-lg-9 col-md-12 col-sm-12 mr-auto ml-auto\">\n                                    <div class=\"card page-carousel\">\n                                        <ngb-carousel>\n                                            <ng-template ngbSlide>\n                                                <img src=\"../assets/img/award_1.jpg\" alt=\"Random first slide\">\n                                                <div class=\"carousel-caption\">\n                                                    <p>3rd Winner of Business IT Case Competition FIND IT! UGM 2018</p>\n                                                    <p>Aurellia - Unicorn</p>\n                                                </div>\n                                            </ng-template>\n                                            <ng-template ngbSlide>\n                                                <img src=\"../assets/img/award_2.jpg\" alt=\"ITFEST USU\">\n                                                <div class=\"carousel-caption\">\n                                                    <p>National Finalist Business IT Case ITFEST USU 2018 </p>\n                                                    <p>Budinesia - Baru Bangun</p>\n                                                </div>\n                                            </ng-template>\n                                            <ng-template ngbSlide>\n                                                <img src=\"../assets/img/award_3.jpg\" alt=\"JOINTS UGM 2018\">\n                                                <div class=\"carousel-caption\">\n                                                    <p>National Finalist Data Mining Competition JOINTS UGM 2018</p>\n                                                    <p>Huyuu</p>\n                                                </div>\n                                            </ng-template>\n                                        </ngb-carousel>\n                                    </div>\n                                </div>\n                            </ng-template>\n                        </ngb-tab>\n                    </ngb-tabset>\n                </div>\n            </div>\n            <br>\n            <div class=\"section text-center\">\n                <div class=\"row\">\n                    <div class=\"col-md-3\">\n                        <div class=\"info\">\n                            <div class=\"icon icon-primary\">\n                                <i class=\"fa fa-film\"></i>\n                            </div>\n                            <div class=\"description\">\n                                <h4 class=\"info-title\">Movieaddict</h4>\n                                <p> Enjoy watching movies in cinema. Big fan of\n                                    <a href=\"https://www.imdb.com/name/nm0634240\">Nolan</a> and Marvel Cinematic Universe. Enjoy watching some tv series too. </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"info\">\n                            <div class=\"icon icon-primary\">\n                                <i class=\"nc-icon nc-bulb-63\"></i>\n                            </div>\n                            <div class=\"description\">\n                                <h4 class=\"info-title\">Ideaddict</h4>\n                                <p> Love to read book and brainstorming about certain topics. I don't need a place full of scenery,\n                                    All I need is room full of perspective </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"info\">\n                            <div class=\"icon icon-primary\">\n                                <i class=\"nc-icon nc-chart-bar-32\"></i>\n                            </div>\n                            <div class=\"description\">\n                                <h4 class=\"info-title\">Dataddict</h4>\n                                <p> Doing some data analysis in my spare time. Join some data mining competition, online courses\n                                    and training. Mostly done in\n                                    <a href=\"https://www.kaggle.com/christianwbsn\"> kaggle.</a>\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"col-md-3\">\n                        <div class=\"info\">\n                            <div class=\"icon icon-primary\">\n                                <i class=\"nc-icon nc-headphones\"></i>\n                            </div>\n                            <div class=\"description\">\n                                <h4 class=\"info-title\">Musicaddict</h4>\n                                <p>Listen to wide range of genre. From Queen to Imagine Dragons, Coldplay to Zedd</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"section section-images section-login\" style=\"background-image: url('assets/img/bg11.jpg');\">\n        <h1 class=\"tim-title text-center\" style=\"font-family:'Gardenfreude'\"> Geekiphany</h1>\n        <div class=\"container\">\n            <div class=\"row example-page\">\n                <div class=\"col-md-6 text-center\" style=\"margin:auto\">\n                    <a [routerLink]=\"['/project','world-cup-2018']\">\n                        <img src=\"../../assets/img/world-cup-2018.jpg\" alt=\"Rounded Image\" class=\"img-rounded img-responsive\" style=\"width: 100%;height: auto;\">\n                        <a [routerLink]=\"['/project','world-cup-2018']\" class=\"btn btn-outline-neutral btn-round\">World Cup 2018 Predictor</a>\n                    </a>\n                </div>\n\n                <!-- <div class=\"col-md-6 text-center\">\n                    <a>\n                        <img src=\"../../assets/img/sentiment-analysis.png\" alt=\"Rounded Image\" class=\"img-rounded img-responsive\" style=\"width: 100%;height: auto;\">\n                        <a [routerLink]=\"['/project/prosentilyzer']\" class=\"btn btn-outline-neutral btn-round\" disabled>Prosentilyzer</a>\n                    </a>\n                </div> -->\n            </div>\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"wrapper\">\n    <div class=\"page-header page-header-xs\" data-parallax=\"true\" style=\"background-image: url('../assets/img/profile-banner_1.jpg');\">\n        <div class=\"filter\"></div>\n    </div>\n    <div class=\"section profile-content\">\n        <div class=\"container\">\n            <div class=\"owner\">\n                <div class=\"avatar\">\n                    <img src=\"../assets/img/faces/SAM_1807.jpg\" alt=\"Circle Image\" class=\"img-circle img-no-padding img-responsive\">\n                </div>\n                <div class=\"name\">\n                    <h4 class=\"title\">Christian Wibisono\n                        <br />\n                    </h4>\n                    <h6 class=\"description\">Informatics Student of Institut Teknologi Bandung </h6>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-md-9 ml-auto mr-auto text-center\">\n                    <p>\n                        Machine Learning and Data-Driven Business Enthusiast. Versatile worker with strong analytical skills. Former Software Engineering Intern of Tokopedia and Ahlijasa.\n                        Currently pursuing Bachelor Degree in Informatics Engineering at Bandung Institute of Technology (ITB) under full scholarship. Have a keen interest in data science and machine learning. Actively competing in data science/data mining/data analytics competitions.\n                    </p>\n                    <br>\n                    <a class=\"btn btn-outline-primary btn-round\" href=\"https://docs.google.com/document/d/1v3SGydIRSNZwe18MS-r2_rOCErGjisFbe0CnDMdiPQw/edit?usp=sharing\">\n                        <i class=\"fa fa-clipboard\"></i> Resume</a>\n                    <a class=\"btn btn-outline-primary btn-just-icon\" href=\"https://www.linkedin.com/in/christianwbsn/\">\n                        <i class=\"fa fa-linkedin\"></i>\n                    </a>\n                    <a class=\"btn btn-outline-primary btn-just-icon\" href=\"https://www.github.com/christianwbsn\">\n                        <i class=\"fa fa-github\"></i>\n                    </a>\n                    <br>\n                    <br>\n                </div>\n            </div>\n            <br/>\n            <div class=\"nav-tabs-navigation col-md-10 col-lg-10 col-sm-10\" style=\"margin:auto\">\n                <div class=\"nav-tabs-wrapper\">\n                    <ngb-tabset [justify]=\"'center'\" class=\"nav justify-content-center tab-space\">\n                        <ngb-tab>\n                            <ng-template ngbTabTitle>\n                                <i class=\"fa fa-graduation-cap\"></i> Education\n                            </ng-template>\n                            <ng-template ngbTabContent>\n                                <table class=\"table table-striped\">\n                                    <thead>\n                                        <tr>\n                                            <th style=\"text-align:center\">Degree</th>\n                                            <th style=\"text-align:center\">Institution</th>\n                                            <th style=\"text-align:center\">Major</th>\n                                            <th>Year</th>\n                                        </tr>\n                                    </thead>\n                                    <tbody>\n                                        <tr>\n                                            <th scope=\"row\">Bachelor Degree</th>\n                                            <td>Institut Teknologi Bandung</td>\n                                            <td>Informatics Engineering</td>\n                                            <td>2020</td>\n                                        </tr>\n                                        <tr>\n                                            <th scope=\"row\">High School</th>\n                                            <td>SMA N 1 Surakarta</td>\n                                            <td>Natural Science</td>\n                                            <td>2016</td>\n                                        </tr>\n                                        <tr>\n                                            <th scope=\"row\">Middle School</th>\n                                            <td>SMP PL Bintang Laut</td>\n                                            <td></td>\n                                            <td>2013</td>\n                                        </tr>\n                                    </tbody>\n                                </table>\n                            </ng-template>\n                        </ngb-tab>\n                        <ngb-tab>\n                            <ng-template ngbTabTitle>\n                                <i class=\"fa fa-briefcase\"></i> Experiences\n                            </ng-template>\n                            <ng-template ngbTabContent>\n                                <div class=\"list-group list-group-flush\">\n                                    <div class=\"list-group-item list-group-item-action flex-column align-items-start\">\n                                        <div class=\"d-flex w-100 justify-content-between\">\n                                            <h6 class=\"mb-1\">\n                                                <strong id=\"company\">Tokopedia</strong>\n                                                <small>Software Engineer Intern</small>\n                                            </h6>\n                                            <small>May-August 2018</small>\n                                        </div>\n                                        <small> Jakarta, Indonesia</small>\n                                        <br>\n                                        <br>\n                                        <p style=\"text-align:justify\">Build Human Resource Information System (HRIS) dashboard and E-Learning for People\n                                            Development (HR)</p>\n                                    </div>\n                                    <div class=\"list-group-item list-group-item-action flex-column align-items-start\">\n                                        <div class=\"d-flex w-100 justify-content-between\">\n                                            <h6 class=\"mb-1\">\n                                                <strong id=\"company\">Ahlijasa</strong>\n                                                <small> Software Engineer Intern </small>\n                                            </h6>\n                                            <small>June-August 2017</small>\n                                        </div>\n                                        <small>Tangerang,Indonesia</small>\n                                        <br>\n                                        <br>\n                                        <p style=\"text-align:justify\">Managed to build sustainable dashboard for the operation team. Gain and visualize\n                                            insight from data. Create some features to simplify driver’s order balancing,\n                                            order monitoring, and helped Ahlijasa to formulate expansion strategy. Increased\n                                            around 40% in better driver performance (on-time rate and behavior). Built using\n                                            Angular 4 and Google Maps API.</p>\n                                    </div>\n                                </div>\n                            </ng-template>\n                        </ngb-tab>\n                    </ngb-tabset>\n                </div>\n            </div>\n            <br>\n        </div>\n    </div>\n    <div class=\"section section-images section-login\" style=\"background-image: url('assets/img/bg11.jpg');\">\n        <div class=\"container\">\n            <div class=\"row example-page\">\n                <div class=\"col-md-6 text-center\" style=\"margin:auto\">\n                    <a [routerLink]=\"['/project','world-cup-2018']\">\n                        <img src=\"../../assets/img/world-cup-2018.jpg\" alt=\"Rounded Image\" class=\"img-rounded img-responsive\" style=\"width: 100%;height: auto;\">\n                        <a [routerLink]=\"['/project','world-cup-2018']\" class=\"btn btn-outline-neutral btn-round\">World Cup 2018 Predictor</a>\n                    </a>\n                </div>\n                <div class=\"col-md-6 text-center\">\n                    <h2>News Feed</h2>\n                    <br> <hr>\n                    <ul style=\"text-align: justify\">\n                        <li> (12/8) NRGO won <a href=\"https://edukasi.kompas.com/read/2018/12/10/21012401/indonesia-raih-5-terbaik-data-science-dan-fintech-cimb-hackathon\">\n                            <b>CIMB 3D Conquest 2018 Data Science Track</b></a></li>\n                        <li> (11/14) NRGO broke into top 5 in <a href=\"https://dailysocial.id/post/finhacks-2018-data-challenge-demo-day\">\n                            <b>BCA Finhacks #DataChallenge Fraud Detection Category</b></a></li>\n                        <li> (10/12) Baru Bangun got 2nd Place of\n                            <b>Techphoria Business IT Case Competition</b></li>\n                        <li> (09/23) Awarded as 1st Winner of <b> Data Mining Competition with Team Dibawah Baseline </b>\n                                and Best Pitching of <b>Innovation Challenge with Team Vanilla Oreo Caramel in IIT Challenge</b></li>\n                         <li>(08/12) Huyuu Ng finished <a href=\"https://compfest.wordpress.com/2018/08/13/camp-2-dsa-cfx/\"><b>Data Science Academy Compfest X</b> </a>\n                             as 1st Best Participant</li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ }),
 
@@ -1471,7 +1534,7 @@ FooterComponent = __decorate([
 /***/ "../../../../../src/app/shared/navbar/navbar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg fixed-top navbar-transparent\" color-on-scroll=\"500\">\n    <div class=\"container\">\n        <div class=\"navbar-translate\">\n            <a class=\"navbar-brand\" [routerLink]=\"['/home']\">CHRISTIAN WIBISONO</a>\n            <button class=\"navbar-toggler navbar-burger\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarToggler\" aria-controls=\"navbarTogglerDemo02\"\n                aria-expanded=\"false\" aria-label=\"Toggle navigation\" (click)=\"sidebarToggle()\">\n                <span class=\"navbar-toggler-bar\"></span>\n                <span class=\"navbar-toggler-bar\"></span>\n                <span class=\"navbar-toggler-bar\"></span>\n            </button>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarToggler\">\n            <ul class=\"navbar-nav ml-auto\">\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" title=\"Find me on Linkedin\" data-placement=\"bottom\" href=\"https://www.linkedin.com/in/christian-wibisono-9b3579137/\"\n                        target=\"_blank\">\n                        <i class=\"fa fa-linkedin\"></i>\n                        <p class=\"d-lg-none\">LinkedIn</p>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" title=\"Star on GitHub\" data-placement=\"bottom\" href=\"https://github.com/christianwbsn\"\n                        target=\"_blank\">\n                        <i class=\"fa fa-github\"></i>\n                        <p class=\"d-lg-none\">GitHub</p>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" title=\"Reach me via email\" data-placement=\"bottom\" href=\"mailto:christian.wibisono7@gmail.com\"\n                        target=\"_blank\">\n                        <i class=\"fa fa-envelope\"></i>\n                        <p class=\"d-lg-none\">Email</p>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" title=\"Follow me on Twitter\" data-placement=\"bottom\" href=\"https://twitter.com/christianwbsn\"\n                        target=\"_blank\">\n                        <i class=\"fa fa-twitter\"></i>\n                        <p class=\"d-lg-none\">Twitter</p>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isHome()\">\n                    <a [routerLink]=\"['/article']\" *ngIf=\"!isDocumentation()\" class=\"nav-link\">\n                        <i class=\"nc-icon nc-glasses-2\"></i>Geekydea</a>\n                    <li class=\"nav-item\" *ngIf=\"!isHome()\">\n                        <a [routerLink]=\"['/profile']\" *ngIf=\"!isDocumentation()\" class=\"nav-link\">\n                            <i class=\"nc-icon nc-single-02\"></i>Geekiphany</a>\n                    </li>\n            </ul>\n        </div>\n    </div>\n</nav>"
+module.exports = "<nav class=\"navbar navbar-expand-lg fixed-top navbar-transparent\" color-on-scroll=\"500\">\n    <div class=\"container\">\n        <div class=\"navbar-translate\">\n            <a class=\"navbar-brand\" [routerLink]=\"['/home']\">CHRISTIAN WIBISONO</a>\n            <button class=\"navbar-toggler navbar-burger\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarToggler\" aria-controls=\"navbarTogglerDemo02\"\n                aria-expanded=\"false\" aria-label=\"Toggle navigation\" (click)=\"sidebarToggle()\">\n                <span class=\"navbar-toggler-bar\"></span>\n                <span class=\"navbar-toggler-bar\"></span>\n                <span class=\"navbar-toggler-bar\"></span>\n            </button>\n        </div>\n        <div class=\"collapse navbar-collapse\" id=\"navbarToggler\">\n            <ul class=\"navbar-nav ml-auto\">\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" title=\"Find me on Linkedin\" data-placement=\"bottom\" href=\"https://www.linkedin.com/in/christian-wibisono-9b3579137/\"\n                        target=\"_blank\">\n                        <i class=\"fa fa-linkedin\"></i>\n                        <p class=\"d-lg-none\">LinkedIn</p>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" title=\"Star on GitHub\" data-placement=\"bottom\" href=\"https://github.com/christianwbsn\"\n                        target=\"_blank\">\n                        <i class=\"fa fa-github\"></i>\n                        <p class=\"d-lg-none\">GitHub</p>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" title=\"Reach me via email\" data-placement=\"bottom\" href=\"mailto:christian.wibisono7@gmail.com\"\n                        target=\"_blank\">\n                        <i class=\"fa fa-envelope\"></i>\n                        <p class=\"d-lg-none\">Email</p>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isDocumentation()\">\n                    <a class=\"nav-link\" rel=\"tooltip\" title=\"Follow me on Twitter\" data-placement=\"bottom\" href=\"https://twitter.com/christianwbsn\"\n                        target=\"_blank\">\n                        <i class=\"fa fa-twitter\"></i>\n                        <p class=\"d-lg-none\">Twitter</p>\n                    </a>\n                </li>\n                <li class=\"nav-item\" *ngIf=\"!isHome()\">\n                    <a [routerLink]=\"['/article']\" *ngIf=\"!isDocumentation()\" class=\"nav-link\">\n                        <i class=\"nc-icon nc-glasses-2\"></i>Geekidea</a>\n                    <li class=\"nav-item\" *ngIf=\"!isHome()\">\n                        <a [routerLink]=\"['/profile']\" *ngIf=\"!isDocumentation()\" class=\"nav-link\">\n                            <i class=\"nc-icon nc-single-02\"></i>Geekiphany</a>\n                    </li>\n            </ul>\n        </div>\n    </div>\n</nav>"
 
 /***/ }),
 
@@ -1583,67 +1646,6 @@ NavbarComponent = __decorate([
 
 var _a, _b;
 //# sourceMappingURL=navbar.component.js.map
-
-/***/ }),
-
-/***/ "../../../../../src/app/signup/signup.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"wrapper\">\n    <div class=\"page-header\" style=\"background-image: url('../assets/img/login-images.jpg');\">\n        <div class=\"filter\"></div>\n            <div class=\"container\">\n                <div class=\"row\">\n                    <div class=\"col-lg-4 col-sm-6 mr-auto ml-auto\">\n                        <div class=\"card card-register\">\n                            <h3 class=\"title\" style=\"color:whitesmoke\">Welcome to Geekystrophe</h3>\n                            <form class=\"register-form\">\n                                <label>Email</label>\n                                <input type=\"text\" class=\"form-control\" placeholder=\"Email\">\n\n                                <label>Password</label>\n                                <input type=\"password\" class=\"form-control\" placeholder=\"Password\">\n                                <button class=\"btn btn-primary btn-block btn-round\">Register</button>\n                            </form>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"footer register-footer text-center\">\n                    <h6>&copy;{{test | date: 'yyyy'}}, made with Angular 4 </h6>\n                </div>\n            </div>\n    </div>\n</div>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/signup/signup.component.scss":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/signup/signup.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-var SignupComponent = (function () {
-    function SignupComponent() {
-        this.test = new Date();
-    }
-    SignupComponent.prototype.ngOnInit = function () { };
-    return SignupComponent;
-}());
-SignupComponent = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        selector: 'app-signup',
-        template: __webpack_require__("../../../../../src/app/signup/signup.component.html"),
-        styles: [__webpack_require__("../../../../../src/app/signup/signup.component.scss")]
-    }),
-    __metadata("design:paramtypes", [])
-], SignupComponent);
-
-//# sourceMappingURL=signup.component.js.map
 
 /***/ }),
 
