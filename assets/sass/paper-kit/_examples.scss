@@ -181,23 +181,30 @@
 }
 
 .presentation-title{
-    font-size: 4em;
+    font-size: 5em;
     font-weight: 700;
-    margin: 0;
+    margin: 0 10px;
     color: #FFFFFF;
     // background: #fbf8ec;
-    background: -moz-linear-gradient(to bottom, #FFFFFF 35%, #4e6773 100%);
-    background: -webkit-linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-    background: -ms-linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-    background: -o-linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-    background: linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
-
+    background: -moz-linear-gradient(to bottom, #FFFFFF 45%, #4e6773 100%);
+    background: -webkit-linear-gradient(to bottom, #FFFFFF 45%,#4e6773 100%);
+    background: -ms-linear-gradient(to bottom, #FFFFFF 45%,#4e6773 100%);
+    background: -o-linear-gradient(to bottom, #FFFFFF 45%,#4e6773 100%);
+    background: linear-gradient(to bottom, #FFFFFF 45%,#4e6773 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .presentation-subtitle{
     font-size: 1.7em;
     color: #FFFFFF;
+    background: -moz-linear-gradient(to bottom, #FFFFFF 45%, #4e6773 100%);
+    background: -webkit-linear-gradient(to bottom, #FFFFFF 45%,#4e6773 100%);
+    background: -ms-linear-gradient(to bottom, #FFFFFF 45%,#4e6773 100%);
+    background: -o-linear-gradient(to bottom, #FFFFFF 45%,#4e6773 100%);
+    background: linear-gradient(to bottom, #FFFFFF 45%,#4e6773 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .category-absolute{
@@ -287,6 +294,6 @@
 
 @media (max-width: 500px){
     h1 .presentation-title{
-        font-size: 2em;
+        font-size: 4em;
     }
 }
